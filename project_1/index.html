@@ -1,0 +1,104 @@
+<!-- button 버튼 
+    table - 테이블 만드는 태그 
+        th 테이블의 헤더부분
+        tr 테이블의 행
+        td 테이블의 열
+        테이블 속성 변경 
+        - border 테두리 설정 border="1" 숫자가 높을수록 두꺼워짐
+         - bordercolor - 테두리 색상 
+         
+    div 태그 전체적인 틀을 만들때 사용됨 (블럭요소)
+    span 인라인 요소
+    class 속성은 네이밍 
+ol 요소는 순서가 있는 목록.
+ul 요소는 순서가 없는 목록.
+ol, ul 요소는 자식으로 li 요소만 올 수 있음.
+li 요소는 블럭 요소로 자신을 포함한 대부분의 블럭 요소를 가질 수 있음
+dl 요소는 개념-정의를 나타내는 목록.
+dl 요소는 자식으로 dt, dd 요소만 올 수 있음.
+dt 요소는 개념을 나타내며 인라인 요소.
+dd 요소는 정의를 나타내며 블럭 요소.
+dt와 dd는 1:1 뿐 아니라 다:다의 형식도 가질 수 있음.
+    -->
+
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            .head {
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: 60px;
+                background: goldenrod;
+                padding: 10px;
+            }
+    
+            .head a {
+                color: black;
+            }
+            .head.top {
+                float: left;
+            }
+            ul {
+                display: inline;
+                list-style: none;
+            }
+    
+            li {
+                float: left;
+                color:black;
+    
+            }
+    
+            .foot a {
+                color:black;
+            }
+    
+            a:link {
+                /* 링크의 밑줄 제거 */
+                text-decoration: none;
+    
+            }
+        </style>
+    
+    </head>
+    
+    <body>
+        <div class="head">
+            <h1><a href="localhost/project_1/index.html"> NAVER </a> </h1>
+            <div class="top">
+                <div class="login"> <button type="button"> <a href="localhost/project_1/index.html"> Login </a> </button>
+                </div>
+                <div class="bt"> <a href="localhost/project_1/index.html"> 알림 </a> </div>
+            </div>
+        </div>
+    
+    
+        <footer>
+            <div class="foot">
+                <ul>
+                    <li><a href="localhost/project/untitled"> About</a> </li>
+                    <li> &nbsp;|&nbsp;</li>
+                    <li><a href="localhost/project/untitled"> partner</a> </li>
+                    <li> &nbsp;|&nbsp;</li>
+                    <li><a href="localhost/project/untitled"> Terms of use</a> </li>
+                    <li>&nbsp; |&nbsp;</li>
+                    <li><a href="localhost/project/untitled"> Privacy Policy</a> </li>
+                </ul><br>
+                <ul>
+                    <li> <Strong>Naver</Strong>Team. 2019</li>
+                    <li> &nbsp;|&nbsp;</li>
+                    <li> 담당자 문의 </li>
+                    <li> &nbsp;:&nbsp;</li>
+                    <li><a href="localhost/project/untitled"> __@naver.com</a> </li>
+    
+                </ul>
+            </div>
+        </footer>
+    </body>
+    
+    </html>
